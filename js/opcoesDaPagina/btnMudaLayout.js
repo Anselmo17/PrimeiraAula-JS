@@ -17,7 +17,7 @@ function mudaTexto(elemento){
 
 }
 
-
+//botao que ao ser clicado muda o texto
 btn.addEventListener('click', mudaTexto);
 
 //adicionar classe
@@ -26,6 +26,7 @@ const mural = document.querySelector('.mural');
     //função muda layout
     function mudaLayout(){
       
+        //
         mural.classList.toggle('mural--linha')
 
         /*  if(mural.classList.contains() == ''){
@@ -38,8 +39,5 @@ const mural = document.querySelector('.mural');
     btn.addEventListener('click', mudaLayout);
 
 
-
-
-
-
+btn.classList.remove('no-js')
 
