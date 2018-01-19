@@ -56,6 +56,14 @@ usuario
 ##API
 -aplicação de programas em interfaces
 
+##usuario
+-clica
+-aparece
+
+##Dev
+-cadastrar evento
+-faz aparecer um alert
+
 
 
 
