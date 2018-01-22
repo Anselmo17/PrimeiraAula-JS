@@ -30,8 +30,8 @@
 
         } else {
             
-            // Cria a funcao
-            criarCartao(conteudo)
+            // Cria a funcao e passa um objeto para ela 
+            criarCartao({conteudo})
         }
         $campoDeConteudo.value = ''
     })

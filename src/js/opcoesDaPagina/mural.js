@@ -3,8 +3,12 @@
 // ${ cor ? '' : 'checked' }
 let contador = document.querySelectorAll('.cartao').length
 
-                            // Parametro padrao: Default parameters
-function criarCartao(conteudo, cor = '') {
+const listaCartoes = []
+        
+    // Parametro padrao: Default parameters
+function criarCartao({conteudo, cor = ''}) {
+
+    listaCartoes.push({conteudo,cor})
     contador++
     // console.log('Criar cartao em construção', conteudo)
 
@@ -91,5 +95,22 @@ function criarCartao(conteudo, cor = '') {
 }
 
 window.criarCartao = criarCartao
+
+window.listaCartoes = listaCartoes
+
+$.ajax({
+    url:"http://ceep.herokuapp.com/cartoes/carregar/",
+    method:"GET",
+    data:"jsonp",
+    data:{
+        usuario:"Anselmo"
+    },
+    sucess:function(resposta){
+        const ajudas = resposta.cartoes
+
+        ajudas.reverse().forEach(ajuda => criarCartao(ajuda))
+    }
+
+})
 
 })(jQuery)
