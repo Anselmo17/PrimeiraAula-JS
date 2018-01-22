@@ -1,0 +1,23 @@
+{
+  "name": "projeto-base",
+  "version": "1.0.0",
+  "description": "Aula-JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anselmo17/PrimeiraAula-JS.git"
+  },
+  "author": "Anselmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anselmo17/PrimeiraAula-JS/issues"
+  },
+  "homepage": "https://github.com/Anselmo17/PrimeiraAula-JS#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
